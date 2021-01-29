@@ -1,5 +1,12 @@
-import GlobalStyle from "./styles/global";
+import { Sidebar } from './components';
+
+import GlobalStyle from './styles/global';
 
 export default function App(): JSX.Element {
-  return <GlobalStyle />;
+  return (
+    <>
+      <Sidebar />
+      <GlobalStyle />
+    </>
+  );
 }

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
   *, *::before, *::after {
@@ -9,10 +9,21 @@ export default createGlobalStyle`
 
   :root {
     --bg-primary: #f6f6f6;
+
+    font-size: 16px;
   }
 
-  body {
+  html, body {
+    height: 100%;
+    width: 100%;
+
     background-color: var(--bg-primary);
+  }
+
+
+  #root {
+    height: 100%;
+    width: 100%;
   }
 
 `;
